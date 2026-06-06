@@ -4,6 +4,11 @@ A production-style Python repository for collecting legal public text data, stor
 
 This project **does not train models**, **does not build training features**, and **does not implement scraping evasion**. It focuses only on collection, raw storage, replay, rate limiting, request sending, logging, and lightweight metrics hooks.
 
+
+## Документация на русском
+
+Подробная инструкция по установке, настройке `.env`, запуску через Poetry/pip, локальному MinIO, batch/live/replay режимам и решению ошибки `Poetry could not find a pyproject.toml file` находится в [`docs/RU_RUNBOOK.md`](docs/RU_RUNBOOK.md).
+
 ## Architecture overview
 
 ```text
