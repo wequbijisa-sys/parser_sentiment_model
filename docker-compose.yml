@@ -1,0 +1,9 @@
+services:
+  # Optional placeholder model endpoint for local smoke tests.
+  # MinIO is intentionally not defined here because this project expects you to
+  # point MINIO_ENDPOINT/MINIO_ENDPOINT_URL at your existing MinIO/S3 service.
+  http-echo:
+    image: hashicorp/http-echo:1.0
+    command: ["-listen=:8080", "-text={\"prediction\":\"placeholder\"}"]
+    ports:
+      - "8080:8080"
